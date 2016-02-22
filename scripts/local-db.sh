@@ -16,4 +16,4 @@ wp db reset --yes
 
 echo "Loading database dump into database"
 _dir="$(dirname "$0")"
-curl -s "$("$_dir/s3url.sh" "$PHILA_DB_BUCKET" current.sql)" | wp db import -
+curl -s "$("$_dir/s3url.sh" "$PHILA_DEPLOY_BUCKET" microsites/current.sql)" | wp db import -
