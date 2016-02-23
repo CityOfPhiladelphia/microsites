@@ -42,4 +42,8 @@ define('SWIFTYPE_ENGINE', '$SWIFTYPE_ENGINE');
 
 /** https://wordpress.org/support/topic/problem-after-the-recent-update */
 define('FS_METHOD', 'direct');
+
+/** Multisite */
+define( 'WP_ALLOW_MULTISITE', true );
+
 PHP
