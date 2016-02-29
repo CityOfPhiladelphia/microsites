@@ -13,3 +13,5 @@ $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
 $mysqli->query("update wp_site set domain='" . $domain . "' where id=1");
 $mysqli->query("update wp_blogs set domain='" . $domain . "' where site_id=1");
 $mysqli->query("update wp_sitemeta set meta_value='https://" . $domain . "' where site_id=1 and meta_key='siteurl'");
+$mysqli->query("update wp_options set option_value='https://" . $domain . "' where option_name='siteurl'");
+$mysqli->query("update wp_options set option_value='https://" . $domain . "' where option_name='home'");
